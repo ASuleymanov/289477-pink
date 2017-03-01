@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alexander Suleymanov](https://up.htmlacademy.ru/adaptive/10/user/289477).
-* Наставник: `Неизвестно`.
+* Наставник: [Alexandr Horbachev](https://htmlacademy.ru/profile/hrbchv).
 
 ---
 
