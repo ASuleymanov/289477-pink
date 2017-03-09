@@ -7,31 +7,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="b-page">
-  <div class="b-page__line">
-    <header class="b-head">
-      <div class="b-head__logo">
-        <div class="b-logo">
-          <a href="#"><img class="b-logo__img" src="http://placehold.it/75x22" alt="logotype"></a>
+<body class="page">
+  <header class="head">
+    <div class="container">
+      <div class="head__logo">
+        <div class="logo">
+          <a href="#"><img class="logo__img" src="http://placehold.it/75x22" alt="logotype"></a>
         </div>
       </div>
-      <div class="b-head__menuicon-bread-crust">
+      <div class="head__menuicon-bread-crust">
         <span class="menuicon-bread-crust menuicon-bread-crust-top"></span>
         <span class="menuicon-bread-crust menuicon-bread-crust-middle"></span>
         <span class="menuicon-bread-crust menuicon-bread-crust-bottom"></span>
       </div>
-    </header>
-    <ul class="b-menu">
-      <li><a href="" class="b-link b-link_menu">Главная</a></li>
-      <li><a href="" class="b-link b-link_menu">Фотографии</a></li>
-      <li><a href="" class="b-link b-link_menu">Конкурс</a></li>
-      <li><a href="" class="b-link b-link_menu">HMTL Academy</a></li>
+    </div>
+  </header>
+  <div class="container">
+    <ul class="menu">
+      <li><a href="index.html" class="link link_menu">Главная</a></li>
+      <li><a href="photo.html" class="link link_menu">Фотографии</a></li>
+      <li><a href="form.html" class="link link_menu">Конкурс</a></li>
+      <li><a href="" class="link link_menu">HMTL Academy</a></li>
     </ul>
     <h2 class="tagline">Конкурс на самое безбашенное путешествие с Пинк</h2>
   </div>
   <main>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="b-page__line">
+      <div class="container">
         <p class="form-tagline">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <label class="form__title" for="family">Фамилия:</label>
         <input class="form__input" type="text" id="family" name="family" placeholder="Укажите фамилию *">
@@ -40,7 +42,7 @@
         <label class="form__title" for="patronymic">Отчество:</label>
         <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
       </div>
-      <div class="b-page__line">
+      <div class="container">
         <div class="progress">
           <h3 class="progress__title">Ваши безбашенные достижения в путешествии</h3>
           <input type="checkbox" class="checkbox" id="field-1" checked>
@@ -57,13 +59,13 @@
           <label class="progress__input" for="field-1">Разгромил отель</label>
         </div>
       </div>
-      <div class="b-page__line">
+      <div class="container">
         <label class="form__title" for="phone">Номер телефона:</label>
         <input class="form__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
         <label class="form__title" for="email">адрес почты</label>
         <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту *">
       </div>
-      <div class="b-page__line">
+      <div class="container">
         <div class="interview">
           <h3 class="interview__title">С каким приложением путешествовали?</h3>
           <input type="radio" class="radio" id="field-1" checked>
@@ -74,7 +76,7 @@
           <label class="progress__input" for="field-1">Windows Phone</label>
         </div>
       </div>
-      <div class="b-page__line">
+      <div class="container">
         <div class="emotion">
           <h3 class="emotion__title" for="review">Опишите свои эмоции</h3>
           <textarea class="emotion__input" name="review" id="review" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
@@ -84,17 +86,17 @@
       </div>
     </form>
   </main>
-  <footer class="b-page__line">
-      <a href="#" class="logo-footer"><img src="http://placehold.it/150x40" alt="logotype"></a>
-      <div class="social">
-        <a class="social-btn icon-twitter" href="#">tw </a>
-        <a class="social-btn icon-facebook" href="#">fb </a>
-        <a class="social-btn icon-youtube" href="#">ytb </a>
-      </div>
-      <div class="copyright">
-        <p>Разработано — </p>
-        <a href="https://htmlacademy.ru"><img src="http://placehold.it/27x34" alt="htmlacademy"></a>
-      </div>
+  <footer class="container">
+    <a href="#" class="logo-footer"><img src="http://placehold.it/150x40" alt="logotype"></a>
+    <div class="social">
+      <a class="social-btn icon-twitter" href="#">tw </a>
+      <a class="social-btn icon-facebook" href="#">fb </a>
+      <a class="social-btn icon-youtube" href="#">ytb </a>
+    </div>
+    <div class="copyright">
+      <p>Разработано — </p>
+      <a href="https://htmlacademy.ru"><img src="http://placehold.it/27x34" alt="htmlacademy"></a>
+    </div>
   </footer>
 </body>
 

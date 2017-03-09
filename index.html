@@ -7,31 +7,33 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="b-page">
-  <div class="b-page__line">
-    <header class="b-head">
-      <div class="b-head__logo">
-        <div class="b-logo">
-          <a href="#"><img class="b-logo__img" src="http://placehold.it/75x22" alt="logotype"></a>
+<body class="page">
+  <header class="head">
+    <div class="container">
+      <div class="head__logo">
+        <div class="logo">
+          <a href="#"><img class="logo__img" src="http://placehold.it/75x22" alt="logotype"></a>
         </div>
       </div>
-      <div class="b-head__menuicon-bread-crust">
+      <div class="head__menuicon-bread-crust">
         <span class="menuicon-bread-crust menuicon-bread-crust-top"></span>
         <span class="menuicon-bread-crust menuicon-bread-crust-middle"></span>
         <span class="menuicon-bread-crust menuicon-bread-crust-bottom"></span>
       </div>
-    </header>
-    <ul class="b-menu">
-      <li><a href="" class="b-link b-link_menu">Главная</a></li>
-      <li><a href="" class="b-link b-link_menu">Фотографии</a></li>
-      <li><a href="" class="b-link b-link_menu">Конкурс</a></li>
-      <li><a href="" class="b-link b-link_menu">HMTL Academy</a></li>
+    </div>
+  </header>
+  <div class="container">
+    <ul class="menu">
+      <li><a href="index.html" class="link link_menu">Главная</a></li>
+      <li><a href="photo.html" class="link link_menu">Фотографии</a></li>
+      <li><a href="form.html" class="link link_menu">Конкурс</a></li>
+      <li><a href="" class="link link_menu">HMTL Academy</a></li>
     </ul>
   </div>
   <main>
-    <div class="b-page__line">
+    <div class="container">
       <div class="download">
-        <button class="download__btn" href="#">Скачать приложение</button>
+        <a class="download__a" href="#">Скачать приложение</a>
         <div class="download__os-mobile">
           <figure><img src="http://placehold.it/50x60" alt="apple-logo"></figure>
           <figure><img src="http://placehold.it/50x60" alt="android-logo"></figure>
@@ -40,13 +42,13 @@
         <p class="dowload__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </div>
-    <div class="b-page__line">
+    <div class="container">
       <div class="tagline">
         <span class="tagline__first">Устали от серости мегаполиса?</span>
         <span class="tagline__second">Нам есть, что вам предложить!</span>
       </div>
     </div>
-    <div class="b-page__line">
+    <div class="container">
       <section class="preview">
         <h2 class="preview__title">Поднимает настроение</h2>
         <p class="preview__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -56,36 +58,34 @@
         <p class="preview__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
       </section>
     </div>
-    <div class="b-page__line">
+    <div class="container">
       <section class="reviews">
         <h2 class="reviews__author">Николай Петров</h2>
         <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </section>
     </div>
-    <div class="b-page__line">
-      <section class="b-slider">
-        <div class="slider__current">
-          <div class="b-slide">
-            <h2 class="b-slide__title">Стандарт</h2>
-            <span class="b-slide__price">3,99 USD</span>
-            <ul class=b-slide-list>
-              <li class="b-slide-list__item">Розовый фильтр</li>
-              <li class="b-slide-list__item">Смайлики</li>
-              <li class="b-slide-list__item">Комментарии</li>
-            </ul>
-          </div>
+    <div class="container">
+      <section class="slider">
+        <div class="slide slide--current">
+          <h2 class="slide__title">Стандарт</h2>
+          <span class="slide__price">3,99 USD</span>
+          <ul class=slide-list>
+            <li class="slide-list__item">Розовый фильтр</li>
+            <li class="slide-list__item">Смайлики</li>
+            <li class="slide-list__item">Комментарии</li>
+          </ul>
         </div>
       </section>
     </div>
-    <div class="b-page__line">
-      <div class="b-info">
-        <span class="b-info__tagline">Остались вопросы?Свяжитесь с нами!</span>
-        <h2 class="b-info__title">Звоните:</h2>
-        <span class="b-info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></span>
-        <h2 class="b-info__title">Пишите:</h2>
-        <span class="b-info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
-        <h2 class="b-info__title">Приезжайте в гости:</h2>
-        <span class="b-info__text">ул. Большая Конюшенная, 19/8</span>
+    <div class="container">
+      <div class="info">
+        <span class="info__tagline">Остались вопросы?Свяжитесь с нами!</span>
+        <h2 class="info__title">Звоните:</h2>
+        <span class="info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></span>
+        <h2 class="info__title">Пишите:</h2>
+        <span class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+        <h2 class="info__title">Приезжайте в гости:</h2>
+        <span class="info__text">ул. Большая Конюшенная, 19/8</span>
       </div>
       <img class="map" src="http://placehold.it/320x160" alt="map" />
     </div>
