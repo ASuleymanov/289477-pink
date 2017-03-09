@@ -4,80 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Pink</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <a href="#"><img src="img/logotype-white.png" alt="логотип"></a>
-    <a class="menu"></a>
-  </header>
-  <main>
-      <img src="pink/img/back-mobile.jpg" alt="внешний фон">
-    <div class="download">
-      <a class="btn" href="#">Скачать приложение</a>
-      <div class="logo-company">
-        <img src="pink/img/apple-logo.png" alt="apple-logo">
-        <img src="pink/img/android-logo.png" alt="android-logo">
-        <img src="pink/img/microsoft-logo.png" alt="microsoft-logo">
+<body class="b-page">
+  <div class="b-page__line">
+    <header class="b-head">
+      <div class="b-head__logo">
+        <div class="b-logo">
+          <a href="#"><img class="b-logo__img" src="http://placehold.it/75x22" alt="logotype"></a>
+        </div>
       </div>
-      <div class="annotation">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
+      <div class="b-head__menuicon-bread-crust">
+        <span class="menuicon-bread-crust menuicon-bread-crust-top"></span>
+        <span class="menuicon-bread-crust menuicon-bread-crust-middle"></span>
+        <span class="menuicon-bread-crust menuicon-bread-crust-bottom"></span>
+      </div>
+    </header>
+    <ul class="b-menu">
+      <li><a href="" class="b-link b-link_menu">Главная</a></li>
+      <li><a href="" class="b-link b-link_menu">Фотографии</a></li>
+      <li><a href="" class="b-link b-link_menu">Конкурс</a></li>
+      <li><a href="" class="b-link b-link_menu">HMTL Academy</a></li>
+    </ul>
+  </div>
+  <main>
+    <div class="b-page__line">
+      <div class="download">
+        <button class="download__btn" href="#">Скачать приложение</button>
+        <div class="download__os-mobile">
+          <figure><img src="http://placehold.it/50x60" alt="apple-logo"></figure>
+          <figure><img src="http://placehold.it/50x60" alt="android-logo"></figure>
+          <figure><img src="http://placehold.it/50x60" alt="microsoft-logo"></figure>
+        </div>
+        <p class="dowload__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </div>
-    <div class="questions">
-      <p>Устали от серости мегаполиса?</p>
-      <p>Нам есть, что вам предложить!</p>
+    <div class="b-page__line">
+      <div class="tagline">
+        <span class="tagline__first">Устали от серости мегаполиса?</span>
+        <span class="tagline__second">Нам есть, что вам предложить!</span>
+      </div>
     </div>
-    <section class="preview">
-      <h2 class="preview__title">Поднимает настроение</h2>
-      <p class="preview__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      <h2 class="preview__title">Меняет мир вокруг</h2>
-      <p class="preview__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      <h2 class="preview__title">Заводит новых друзей</h2>
-      <p class="preview__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-    </section>
-    <section class="reviews">
-      <h2 class="reviws__title">Николай Петров</h2>
-      <p class="reviws__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      <ul class="paginator row">
-        <li>
-          <a class="current" href="#"></a>
-        </li>
-        <li>
-          <a href="2"></a>
-        </li>
-        <li>
-          <a href="3"></a>
-        </li>
-      </ul>
-    </section>
-    <section class="buy">
-      <h2 class="buy__title">Стандарт</h2>
-      <p class="buy__sum">3,99 USD</p>
-      <ul>
-        <li><a href="#" class="btn">Розовый фильтр</a></li>
-        <li><a href="#" class="btn">Смайлики</a></li>
-        <li><a href="#" class="btn">Комментарии</a></li>
-      </ul>
-      <ul class="paginator row">
-        <li>
-          <a class="1" href="#"></a>
-        </li>
-        <li>
-          <a href="current"></a>
-        </li>
-        <li>
-          <a href="3"></a>
-        </li>
-      </ul>
-    </section>
-    <div class="info">
-      <p>Остались вопросы?Свяжитесь с нами!</p>
-      <p class="info__title">Звоните:</p>
-      <p class="info__content"><a href="tel:+7812556666">+7 (812) 555-66-66</a></p>
-      <p class="info__title">Пишите:</p>
-      <p class="info__content">mail@htmlacademy.ru</p>
-      <p class="info__title">Приезжайте в гости:</p>
-      <p class="info__content">ул. Большая Конюшенная, 19/8</p>
-      <img src="pink/img/map.png" alt="карта">
+    <div class="b-page__line">
+      <section class="preview">
+        <h2 class="preview__title">Поднимает настроение</h2>
+        <p class="preview__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h2 class="preview__title">Меняет мир вокруг</h2>
+        <p class="preview__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h2 class="preview__title">Заводит новых друзей</h2>
+        <p class="preview__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </section>
+    </div>
+    <div class="b-page__line">
+      <section class="reviews">
+        <h2 class="reviews__author">Николай Петров</h2>
+        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </section>
+    </div>
+    <div class="b-page__line">
+      <section class="b-slider">
+        <div class="slider__current">
+          <div class="b-slide">
+            <h2 class="b-slide__title">Стандарт</h2>
+            <span class="b-slide__price">3,99 USD</span>
+            <ul class=b-slide-list>
+              <li class="b-slide-list__item">Розовый фильтр</li>
+              <li class="b-slide-list__item">Смайлики</li>
+              <li class="b-slide-list__item">Комментарии</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="b-page__line">
+      <div class="b-info">
+        <span class="b-info__tagline">Остались вопросы?Свяжитесь с нами!</span>
+        <h2 class="b-info__title">Звоните:</h2>
+        <span class="b-info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></span>
+        <h2 class="b-info__title">Пишите:</h2>
+        <span class="b-info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+        <h2 class="b-info__title">Приезжайте в гости:</h2>
+        <span class="b-info__text">ул. Большая Конюшенная, 19/8</span>
+      </div>
+      <img class="map" src="http://placehold.it/320x160" alt="map" />
     </div>
   </main>
 </body>
