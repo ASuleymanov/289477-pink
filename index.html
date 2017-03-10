@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Pink</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body class="page">
+  <header class="page-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="http://placehold.it/75x22" width="75" height="22" alt="logotype"></a>
+      <div class="burger-icon"></div>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="index.html" class="main-menu__link">Главная</a></li>
+          <li><a href="photo.html" class="main-menu__link">Фотографии</a></li>
+          <li><a href="form.html" class="main-menu__link">Конкурс</a></li>
+          <li><a href="#" class="main-menu__link">HMTL Academy</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="download">
+      <div class="container">
+        <a class="download__btn" href="#">Скачать приложение</a>
+        <div class="download__os-mobile">
+          <figure><img src="http://placehold.it/50x60" width="50" height="60" alt="apple-logo"></figure>
+          <figure><img src="http://placehold.it/50x60" width="50" height="60" alt="android-logo"></figure>
+          <figure><img src="http://placehold.it/50x60" width="50" height="60" alt="microsoft-logo"></figure>
+        </div>
+        <p class="dowload__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+    <div class="tagline">
+      <div class="container">
+        <span class="tagline__text">Устали от серости мегаполиса?</span>
+        <span class="tagline__text">Нам есть, что вам предложить!</span>
+      </div>
+    </div>
+    <section class="preview">
+      <div class="container">
+        <h2 class="preview__title">Поднимает настроение</h2>
+        <p class="preview__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h2 class="preview__title">Меняет мир вокруг</h2>
+        <p class="preview__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h2 class="preview__title">Заводит новых друзей</h2>
+        <p class="preview__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <span class="reviews__author">Николай Петров</span>
+        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="slide slide--current">
+          <h2 class="slide__title">Стандарт</h2>
+          <span class="slide__price">3,99 USD</span>
+          <ul class=slide-list>
+            <li class="slide-list__item">Розовый фильтр</li>
+            <li class="slide-list__item">Смайлики</li>
+            <li class="slide-list__item">Комментарии</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="info">
+      <div class="container">
+        <span class="info__tagline">Остались вопросы?Свяжитесь с нами!</span>
+        <h2 class="info__title">Звоните:</h2>
+        <span class="info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></span>
+        <h2 class="info__title">Пишите:</h2>
+        <span class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+        <h2 class="info__title">Приезжайте в гости:</h2>
+        <span class="info__text">ул. Большая Конюшенная, 19/8</span>
+        <img class="map" src="http://placehold.it/320x160" width="320" height="160" alt="map" />
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
