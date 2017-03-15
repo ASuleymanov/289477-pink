@@ -5,99 +5,86 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Pink</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="page">
   <header class="page-header">
-    <div class="container">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
-        <a class="page-header__burger-icon"><img src="img/icon-menu-burger.svg" width="50" height="24" alt="menu-burger"></a>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul>
-            <li><a href="index.html" class="main-nav__link">Главная</a></li>
-            <li><a href="photo.html" class="main-nav__link">Фотографии</a></li>
-            <li><a href="form.html" class="main-nav__link">Конкурс</a></li>
-            <li><a href="#" class="main-nav__link">HMTL Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="page-header__tagline">Конкурс на самое безбашенное путешествие с Пинк</div>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
     </div>
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-header__tagline">Конкурс на самое безбашенное путешествие с Пинк</div>
   </header>
   <main class="page-main">
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="form-tagline">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <div class="name">
-        <div class="container">
-          <p class="form-tagline">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-          <label class="form__title" for="family">Фамилия:</label>
-          <input class="form__input" type="text" id="family" name="family" placeholder="Укажите фамилию *">
-          <label class="form__title" for="name">Имя:</label>
-          <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *">
-          <label class="form__title" for="patronymic">Отчество:</label>
-          <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-        </div>
+        <label class="form__title" for="family">Фамилия:</label>
+        <input class="form__input" type="text" id="family" name="family" placeholder="Укажите фамилию *">
+        <label class="form__title" for="name">Имя:</label>
+        <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *">
+        <label class="form__title" for="patronymic">Отчество:</label>
+        <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
       </div>
       <div class="progress">
-        <div class="container">
-          <h3 class="progress__title">Ваши безбашенные достижения в путешествии</h3>
-          <input type="checkbox" class="checkbox" id="field-1" checked>
-          <label class="progress__input" for="field-1">Сделал селфи с акулой</label>
-          <input type="checkbox" class="checkbox" id="field-2" checked>
-          <label class="progress__input" for="field-1">Обгорел на пляже</label>
-          <input type="checkbox" class="checkbox" id="field-3">
-          <label class="progress__input" for="field-1">Видел Чака Норриса</label>
-          <input type="checkbox" class="checkbox" id="field-4">
-          <label class="progress__input" for="field-1">Накупил сувениров</label>
-          <input type="checkbox" class="checkbox" id="field-5" checked>
-          <label class="progress__input" for="field-1">Удержал башню</label>
-          <input type="checkbox" class="checkbox" id="field-6">
-          <label class="progress__input" for="field-1">Разгромил отель</label>
-        </div>
+        <h3 class="progress__title">Ваши безбашенные достижения в путешествии</h3>
+        <input type="checkbox" class="checkbox" id="field-1" checked>
+        <label class="progress__input" for="field-1">Сделал селфи с акулой</label>
+        <input type="checkbox" class="checkbox" id="field-2" checked>
+        <label class="progress__input" for="field-1">Обгорел на пляже</label>
+        <input type="checkbox" class="checkbox" id="field-3">
+        <label class="progress__input" for="field-1">Видел Чака Норриса</label>
+        <input type="checkbox" class="checkbox" id="field-4">
+        <label class="progress__input" for="field-1">Накупил сувениров</label>
+        <input type="checkbox" class="checkbox" id="field-5" checked>
+        <label class="progress__input" for="field-1">Удержал башню</label>
+        <input type="checkbox" class="checkbox" id="field-6">
+        <label class="progress__input" for="field-1">Разгромил отель</label>
       </div>
       <div class="contacts">
-        <div class="container">
-          <label class="form__title" for="phone">Номер телефона:</label>
-          <input class="form__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
-          <label class="form__title" for="email">адрес почты</label>
-          <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту *">
-        </div>
+        <label class="form__title" for="phone">Номер телефона:</label>
+        <input class="form__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+        <label class="form__title" for="email">адрес почты</label>
+        <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту *">
       </div>
       <div class="interview">
-        <div class="container">
-          <h3 class="interview__title">С каким приложением путешествовали?</h3>
-          <input type="radio" class="radio" id="field-1" checked>
-          <label class="progress__input" for="field-1">Pink для iOS</label>
-          <input type="radio" class="radio" id="field-2">
-          <label class="progress__input" for="field-1">Pink на Android</label>
-          <input type="radio" class="radio" id="field-3">
-          <label class="progress__input" for="field-1">Windows Phone</label>
-        </div>
+        <h3 class="interview__title">С каким приложением путешествовали?</h3>
+        <input type="radio" class="radio" id="field-1" checked>
+        <label class="progress__input" for="field-1">Pink для iOS</label>
+        <input type="radio" class="radio" id="field-2">
+        <label class="progress__input" for="field-1">Pink на Android</label>
+        <input type="radio" class="radio" id="field-3">
+        <label class="progress__input" for="field-1">Windows Phone</label>
       </div>
       <div class="emotion">
-        <div class="container">
-          <h3 class="emotion__title" for="review">Опишите свои эмоции</h3>
-          <textarea class="emotion__input" name="review" id="review" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-          <button type="submit" form="form">Отправить форму</button>
-          <p>* — обязательные поля</p>
-        </div>
+        <h3 class="emotion__title" for="review">Опишите свои эмоции</h3>
+        <textarea class="emotion__input" name="review" id="review" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <button type="submit" form="form">Отправить форму</button>
+        <p>* — обязательные поля</p>
       </div>
     </form>
   </main>
   <footer class="page-footer">
-    <div class="container">
-      <a class="logo--footer" href="index.html"><img src="http://placehold.it/150x40" width="150" height="40" alt="logotype"></a>
-      <div class="social">
-        <a class="social-btn icon-twitter" href="#">tw </a>
-        <a class="social-btn icon-facebook" href="#">fb </a>
-        <a class="social-btn icon-youtube" href="#">ytb </a>
-      </div>
-      <div class="copyright">
-        <p>Разработано — </p>
-        <a href="https://htmlacademy.ru"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy"></a>
-      </div>
+    <a class="logo--footer" href="index.html"><img src="http://placehold.it/150x40" width="150" height="40" alt="logotype"></a>
+    <div class="social">
+      <a class="social-btn icon-twitter" href="#">tw </a>
+      <a class="social-btn icon-facebook" href="#">fb </a>
+      <a class="social-btn icon-youtube" href="#">ytb </a>
+    </div>
+    <div class="copyright">
+      <p>Разработано — </p>
+      <a href="https://htmlacademy.ru"><img src="http://placehold.it/27x34" width="27" height="34" alt="htmlacademy"></a>
     </div>
   </footer>
 </body>

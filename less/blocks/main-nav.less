@@ -1,36 +1,130 @@
+/*
+/*Зададим стили для блока навигации.*/
 .main-nav {
+  width:  auto;
+  min-height: 0px;
+  background-color: #283645;
+}
+.main-nav__items {
+  list-style: none;
+}
+/*Зададим базовые стили для переключателя.*/
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
 
-  & ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0;
-  }
-  & li {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: 700;
-  }
-  & a {
-    display: flex;
-    justify-content: space-around;
-    width: 320px;
-    padding: 26px 0px;
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
+  display: block;
+  width: 80px;
+  height: 65px;
+
+  font-size: 0;
+
+  background-color: #283645;
+  cursor: pointer;
+
+  border: none;
+
+  &:hover {
     background-color: #283645;
-    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-    & :hover {
-      background: #293449;
-    }
-    & :active {
-      color: #8e939c;
-      background: #1d2739;
-    }
+  }
+
+  &:active {
+    background-color: #283645;
+
   }
 }
+/*Сверстаем состояние закрытого переключателя.*/
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top:21px;
+  right: 20px;
 
+  width: 50px;
+  height: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff,
+              0 20px 0 0 #ffffff;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.3),
+              0 20px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 35px;
+
+    width: 30px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+/*Зададим стили для ссылок в меню сайта.*/
+.main-nav__items {
+  /*min-height: 255px;*/
+  font-weight: bold;
+}
+
+.main-nav__item a {
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #283645;
+  border-top: 1px solid #475360;
+  border-bottom: 1px solid #030303;
+}
+
+.main-nav__item a[href] {
+  &:hover {
+    background-color: #283645;
+    border-top-color: #283645;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #283645;
+    border-top-color: #283645;
+  }
+}
 
