@@ -12,21 +12,21 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
-      <button class="page-header__burger-icon">
-        <img src="img/icon-menu-burger.svg" width="50" height="24" alt="menu-burger">
-        <nav class="main-nav hidden">
-          <div class="main-nav__wrapper">
-            <ul>
-              <li><a href="index.html" class="main-nav__link">Главная</a></li>
-              <li><a href="photo.html" class="main-nav__link">Фотографии</a></li>
-              <li><a href="form.html" class="main-nav__link">Конкурс</a></li>
-              <li><a href="#" class="main-nav__link">HMTL Academy</a></li>
-            </ul>
-          </div>
-        </nav>
+    </div>
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items hidden">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
+        </ul>
+      </div>
+    </nav>
       </button>
     </div>
-    <div class="page-header__tagline"><img src="img/iphone-hand-mobile@1x.png" alt=""></div>
+    <div class="page-header__tagline"></div>
   </header>
   <main class="page-main">
     <div class="download">
@@ -92,6 +92,18 @@
     </div>
     <img class="map" src="img/bg-map-mobile@1x.png" width="320" height="160" alt="map" />
   </main>
+  <footer class="page-footer hidden">
+    <a class="logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
+    <div class="social">
+      <a class="social-btn icon-twitter" href="#">tw </a>
+      <a class="social-btn icon-facebook" href="#">fb </a>
+      <a class="social-btn icon-youtube" href="#">ytb </a>
+    </div>
+    <div class="copyright">
+      <p>Разработано</p>
+      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
+    </div>
+  </footer>
 </body>
 
 </html>
