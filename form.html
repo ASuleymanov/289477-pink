@@ -10,104 +10,112 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
-    </div>
-    <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
-        </ul>
+    <a class="logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
+    <nav class="main-nav">
+      <div class="main-nav__toggle">
+        <button class="main-nav__toggle--open hidden" type="button">Открыть меню</button>
+        <button class="main-nav__toggle--close" type="button">Закрыть меню</button>
       </div>
+      <ul class="main-nav__items">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
+      </ul>
     </nav>
-    <div class="page-header__tagline">Конкурс на самое безбашенное путешествие с Пинк</div>
   </header>
   <main class="page-main">
+    <div class="promo">Конкурс на самое безбашенное путешествие с Пинк</div>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form-tagline">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-      <div class="form-name">
-        <label class="form__title" for="family">Фамилия:</label>
+      <p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+      <div class="wrapper-white">
+        <label class="form__label" for="family">Фамилия:</label>
         <input class="form__input" type="text" id="family" name="family" placeholder="Укажите фамилию *">
-        <label class="form__title" for="name">Имя:</label>
+        <label class="form__label" for="name">Имя:</label>
         <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя *">
-        <label class="form__title" for="patronymic">Отчество:</label>
+        <label class="form__label" for="patronymic">Отчество:</label>
         <input class="form__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
       </div>
-      <div class="form-progress">
-        <h3 class="progress__title">Ваши безбашенные достижения в путешествии</h3>
-        <div class="progress-item">
-          <input type="checkbox" class="checkbox" id="field-1" checked>
-          <span class="checkbox-custom"></span>
-          <label class="progress__input" for="field-1">Сделал селфи с акулой</label>
+      <div class="wrapper-lightgray wrapper-lightgray--form">
+        <h3 class="form__title form__title--red">Ваши безбашенные достижения в путешествии</h3>
+        <div class="form__item">
+          <label for="field-1">
+            <input type="checkbox" class="checkbox" id="field-1" checked>
+            <span class="checkbox-custom"></span>Сделал селфи с акулой
+          </label>
         </div>
-        <div class="progress-item">
-          <input type="checkbox" class="checkbox" id="field-2" checked>
-          <span class="checkbox-custom"></span>
-          <label class="progress__input" for="field-2">Обгорел на пляже</label>
+        <div class="form__item">
+          <label for="field-2">
+            <input type="checkbox" class="checkbox" id="field-2" checked>
+            <span class="checkbox-custom"></span>Обгорел на пляже
+          </label>
         </div>
-        <div class="progress-item">
-          <input type="checkbox" class="checkbox" id="field-3">
-          <span class="checkbox-custom"></span>
-          <label class="progress__input" for="field-3">Видел Чака Норриса</label>
+        <div class="form__item">
+          <label for="field-3">
+            <input type="checkbox" class="checkbox" id="field-3">
+            <span class="checkbox-custom"></span>Видел Чака Норриса
+          </label>
         </div>
-        <div class="progress-item">
-          <input type="checkbox" class="checkbox" id="field-4">
-          <span class="checkbox-custom"></span>
-          <label class="progress__input" for="field-4">Накупил сувениров</label>
+        <div class="form__item">
+          <label for="field-4">
+            <input type="checkbox" class="checkbox" id="field-4">
+            <span class="checkbox-custom"></span>Накупил сувениров
+          </label>
         </div>
-        <div class="progress-item">
-          <input type="checkbox" class="checkbox" id="field-5" checked>
-          <span class="checkbox-custom"></span>
-          <label class="progress__input" for="field-5">Удержал башню</label>
+        <div class="form__item">
+          <label for="field-5">
+            <input type="checkbox" class="checkbox" id="field-5" checked>
+            <span class="checkbox-custom"></span>Удержал башню
+          </label>
         </div>
-        <div class="progress-item">
-          <input type="checkbox" class="checkbox" id="field-6">
-          <span class="checkbox-custom"></span>
-          <label class="progress__input" for="field-6">Разгромил отель</label>
+        <div class="form__item">
+          <label for="field-6">
+            <input type="checkbox" class="checkbox" id="field-6">
+            <span class="checkbox-custom"></span>Разгромил отель
+          </label>
         </div>
       </div>
-      <div class="form-contacts">
-        <label class="form__title" for="phone">Номер телефона:</label>
+      <div class="wrapper-white">
+        <label class="form__label" for="phone">номер телефона:</label>
         <input class="form__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
-        <label class="form__title" for="email">адрес почты</label>
+        <label class="form__label" for="email">адрес почты</label>
         <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту *">
       </div>
-      <div class="form-interview">
-        <h3 class="interview__title">С каким приложением путешествовали?</h3>
-        <div class="progress-item">
-          <input type="radio" class="radio" id="field-7" checked>
-          <span class="radio-custom"></span>
-          <label class="progress__input" for="field-7">Pink для iOS</label>
+      <div class="wrapper-lightgray wrapper-lightgray--form">
+        <h3 class="form__title form__title--red">С каким приложением путешествовали?</h3>
+        <div class="form__item">
+          <label for="field-7">
+            <input type="checkbox" class="checkbox" id="field-7" checked>
+            <span class="radio-custom"></span>Pink для iOS
+          </label>
         </div>
-        <div class="progress-item">
-          <input type="radio" class="radio" id="field-8">
-          <span class="radio-custom"></span>
-          <label class="progress__input" for="field-8">Pink на Android</label>
+        <div class="form__item">
+          <label for="field-8">
+            <input type="checkbox" class="checkbox" id="field-8">
+            <span class="radio-custom"></span>Pink на Android
+          </label>
         </div>
-        <div class="progress-item">
-          <input type="radio" class="radio" id="field-9">
-          <span class="radio-custom"></span>
-          <label class="progress__input" for="field-9">Windows Phone</label>
+        <div class="form__item">
+          <label for="field-9">
+            <input type="checkbox" class="checkbox" id="field-9">
+            <span class="radio-custom"></span>Windows Phone
+          </label>
         </div>
       </div>
-      <div class="form-emotion">
-        <h3 class="emotion__title" for="review">Опишите свои эмоции</h3>
-        <textarea class="emotion__input" name="review" id="review" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-        <button class="form__btn" type="submit" form="form">Отправить форму</button>
-        <p>* — обязательные поля</p>
+      <div class="wrapper-white">
+        <label class="form__title form__title--red" for="review">Опишите свои эмоции</label>
+        <textarea class="form__textarea" name="review" id="review" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
       </div>
+      <button class="form__btn" type="submit">Отправить форму</button>
+      <p class="form__footnote"><span>*</span> — обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer">
-    <a class="logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
+    <a class="logo logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
     <div class="social">
-      <a class="social-btn icon-twitter" href="#">tw </a>
-      <a class="social-btn icon-facebook" href="#">fb </a>
-      <a class="social-btn icon-youtube" href="#">ytb </a>
+      <a class="social__btn social__btn--twitter" href="#">tw </a>
+      <a class="social__btn ocial__btn--facebook" href="#">fb </a>
+      <a class="social__btn ocial__btn--youtube" href="#">ytb </a>
     </div>
     <div class="copyright">
       <p>Разработано</p>

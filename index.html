@@ -10,25 +10,22 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
-    </div>
-    <nav class="main-nav main-nav--closed">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__items hidden">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
-        </ul>
+    <a class="logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
+    <nav class="main-nav">
+      <div class="main-nav__toggle">
+        <button class="main-nav__toggle--open" type="button">Открыть меню</button>
+        <button class="main-nav__toggle--close hidden" type="button">Закрыть меню</button>
       </div>
+      <ul class="main-nav__items hidden">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
+      </ul>
     </nav>
-      </button>
-    </div>
-    <div class="page-header__tagline"></div>
   </header>
   <main class="page-main">
+    <div class="promo--index"></div>
     <div class="download">
       <div class="container">
         <div class="download-wrapper">
@@ -61,12 +58,12 @@
         </div>
       </div>
     </section>
-    <section class="reviews">
+    <div class="reviews">
       <div class="container">
         <div class="reviews__author">Николай Петров</div>
         <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       </div>
-    </section>
+    </div>
     <section class="slider">
       <div class="slide slide--current">
         <div class="slide__wrapper">
@@ -88,7 +85,6 @@
       <p class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
       <h2 class="info__title">Приезжайте в гости:</h2>
       <p class="info__text">ул. Большая Конюшенная, 19/8</p>
-
     </div>
     <img class="map" src="img/bg-map-mobile@1x.png" width="320" height="160" alt="map" />
   </main>

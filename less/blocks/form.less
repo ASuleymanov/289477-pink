@@ -1,20 +1,31 @@
 .form {
   display: flex;
   flex-direction: column;
-}
-
-.form-tagline {
-  padding: 54px 24px 49px 25px;
   text-align: center;
-  color: #283645;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 30px;
 }
 
 .form__title {
+  padding-top: 54px;
+  padding-bottom: 0px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  &--red {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #d22856;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.form__label {
   text-align: left;
-  padding-left:43px;
+  padding-left: 43px;
   color: #d22856;
   font-size: 14px;
   font-weight: 400;
@@ -25,44 +36,27 @@
 .form__input {
   padding: 24px;
   margin: 10px 20px;
-  margin-bottom: 42px;
-  width:280px;
+  // margin-bottom: 42px;
+  width: 280px;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  border: 1px solid #000;
+  border: 2px solid #e5e5e5;
 }
 
-.form-progress,
-.form-interview {
-  background-color: #f2f2f2;
-}
 
-.progress__title,
-.interview__title,
-.emotion__title {
-  padding: 41px 47px;
-  text-align: center;
-  color: #d22856;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.progress-item {
+.form__item {
   text-align: left;
   padding: 20px;
-}
-.progress__input{
   color: #283645;
 }
+
+
 /* Скрываем реальный чекбокс */
 
 .checkbox,
 .radio {
-display: none;
-
+  display: none;
 }
 
 .checkbox-custom {
@@ -70,22 +64,20 @@ display: none;
   width: 40px;
   height: 40px;
   background-color: #fff;
-  border:1px solid #000;
+  border: 2px solid #e5e5e5;
   margin-right: 30px;
-
-
 }
+
 .radio-custom {
   position: relative;
   width: 40px;
   height: 40px;
   background-color: #fff;
-  border:1px solid #000;
+  border: 2px solid #e5e5e5;
   border-radius: 50%;
-  margin-right:32px;
-
-
+  margin-right: 32px;
 }
+
 .checkbox-custom {
   background: transparent url("") no-repeat;
 }
@@ -107,61 +99,46 @@ display: none;
   left: 10px;
   background: transparent url("../img/icon-yes.svg") no-repeat;
 }
-.radio:checked + .radio-custom::before {
+
+.checkbox:checked + .radio-custom::before {
   content: "";
   display: block;
   position: absolute;
-  top: 1px;
+  top: 0px;
   right: 0px;
   bottom: 0px;
-  left: 1px;
+  left: 0px;
   background: transparent url("../img/icon-map-marker.svg") no-repeat;
 }
-/**/
-.form-amotion {
 
-}
-.emotion__input{
+
+/*----------*/
+
+.form__textarea {
   padding-top: 25px;
   margin: 20px;
   margin-bottom: 0px;
   margin-top: 0px;
   text-align: center;
-  width:280px;
-
-  border:3px solid @bg-lightgrey;
-
+  width: 280px;
+  border: 2px solid @bg-lightgrey;
 }
+
 .form__btn {
-    display: block;
-    width:280px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    border: 3px solid #fff;
-    margin:20px;
-    margin-top: 48px;
-    padding: 24px 0px;
-    color: #fff;
-    background-color: #2aab6d;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.form-emotion {
+  display: block;
+  width: 280px;
   text-align: center;
-  & p{
-    text-transform: uppercase;
-    color: #283645;
-  }
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  border: 3px solid #fff;
+  margin: 20px;
+  margin-top: 48px;
+  padding: 24px 0px;
+  color: #fff;
+  background-color: #2aab6d;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
-
-
-
-
-
-
-
-

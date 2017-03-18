@@ -10,88 +10,113 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
-    </div>
-    <nav class="main-nav main-nav--opened">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-          <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
-        </ul>
+    <a class="logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
+    <nav class="main-nav">
+      <div class="main-nav__toggle">
+        <button class="main-nav__toggle--open" type="button">Открыть меню</button>
+        <button class="main-nav__toggle--close hidden" type="button">Закрыть меню</button>
       </div>
+      <ul class="main-nav__items hidden">
+        <li class="main-nav__item"><a href="index.html">Главная</a></li>
+        <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
+      </ul>
     </nav>
-    <div class="page-header__tagline">Фотографии пользователей</div>
-    </div>
   </header>
   <main class="page-main">
-  <p class="tagline">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
-    <div class="foto-block">
-      <div class="foto">
-        <div class="flag flag-new">ПАНОРАМА ДНЯ</div>
-        <img width="320" height="137" src="http://placehold.it/320x137" width="320" height="137" alt="фото">
-        <p class="foto__author">Анна</p>
-        <p class="foto__time">(5 минут назад)</p>
+    <div class="promo">Фотографии пользователей</div>
+    <div class="foto">
+      <p class="foto__title">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</p>
+      <div class="flag flag-new hidden">ПАНОРАМА ДНЯ</div>
+      <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="photo">
+      <div class="wrapper-lightgray wrapper-lightgray--foto">
+        <div class="foto__author-time">
+          <p class="foto__author">Анна</p>
+          <p class="foto__time">(5 минут назад)</p>
+        </div>
         <p class="foto__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
         <p class="foto__like">Нравится: 215</p>
       </div>
-      <div class="foto">
-        <img width="280" height="180" src="http://placehold.it/280x180" width="280" height="180" alt="фото">
-        <p class="foto__author">Левон</p>
-        <p class="foto__time">(5 часов назад)</p>
+    </div>
+    <div class="foto">
+      <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="photo">
+      <div class="wrapper-lightgray wrapper-lightgray--foto">
+        <div class="foto__author-time">
+          <p class="foto__author">Левон</p>
+          <p class="foto__time">(5 часов назад)</p>
+        </div>
         <p class="foto__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
         <p class="foto__like">Нравится: 356</p>
       </div>
-      <div class="foto">
-        <img width="280" height="180" src="http://placehold.it/280x180" width="280" height="180" alt="фото">
-        <p class="foto__author">Антон</p>
-        <p class="foto__time">(12 часов назад)</p>
+    </div>
+    <div class="foto">
+      <img src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="photo">
+      <div class="wrapper-lightgray wrapper-lightgray--foto">
+        <div class="foto__author-time">
+          <p class="foto__author">Антон</p>
+          <p class="foto__time">(12 часов назад)</p>
+        </div>
         <p class="foto__comment">Соседи будут рады!</p>
         <p class="foto__like">Нравится: 666</p>
       </div>
-      <div class="foto">
-        <img width="280" height="180" src="http://placehold.it/280x180" width="280" height="180" alt="фото">
-        <p class="foto__author">Борис</p>
-        <p class="foto__time">(20 часов назад)</p>
+    </div>
+    <div class="foto">
+      <img src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="photo">
+      <div class="wrapper-lightgray wrapper-lightgray--foto">
+        <div class="foto__author-time">
+          <p class="foto__author">Борис</p>
+          <p class="foto__time">(20 часов назад)</p>
+        </div>
         <p class="foto__comment">Здесь могла быть ваша цитата о высоком и вечном</p>
         <p class="foto__like">Нравится: 215</p>
       </div>
-      <div class="foto">
-        <img width="280" height="180" src="http://placehold.it/280x180" width="280" height="180" alt="фото">
-        <p class="foto__author">Сергей</p>
-        <p class="foto__time">(25 часов назад)</p>
+    </div>
+    <div class="foto">
+      <img src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="photo">
+      <div class="wrapper-lightgray wrapper-lightgray--foto">
+        <div class="foto__author-time">
+          <p class="foto__author">Сергей</p>
+          <p class="foto__time">(25 часов назад)</p>
+        </div>
         <p class="foto__comment">Самая кубанская в мире!</p>
         <p class="foto__like">Нравится: 4</p>
       </div>
-      <div class="foto">
-        <img width="280" height="180" src="http://placehold.it/280x180" width="280" height="180" alt="фото">
-        <p class="foto__author">Максим</p>
-        <p class="foto__time">(40 часов назад)</p>
+    </div>
+    <div class="foto">
+      <img src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="photo">
+      <div class="wrapper-lightgray wrapper-lightgray--foto">
+        <div class="foto__author-time">
+          <p class="foto__author">Максим</p>
+          <p class="foto__time">(40 часов назад)</p>
+        </div>
         <p class="foto__comment">Где снег-то?</p>
         <p class="foto__like">Нравится: 150</p>
       </div>
-      <div class="foto">
-        <img width="280" height="180" src="http://placehold.it/280x180" width="280" height="180" alt="фото">
-        <p class="foto__author">Надежда</p>
-        <p class="foto__time">(45 часов назад)</p>
-        <p class="foto__comment">Всем GM и взаимные лайки!</p>
-        <p class="foto__like">Нравится: 2560</p>
-      </div>
-      <p>Затмите их всех!Выкладывайте все, что накопилось в телефоне!</p>
     </div>
-    <div class="foto-user">
-      <div class="container">
-        <img src="http://placehold.it/280x374" width="280" height="374" width="280" height="374" alt="foto-user">
+    <div class="foto">
+      <img src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="photo">
+      <div class="wrapper-lightgray wrapper-lightgray--foto">
+        <div class="foto__author-time">
+          <p class="foto__author">Надежда</p>
+          <p class="foto__time">(45 часов назад)</p>
+        </div>
+        <p class="foto__comment">Всем GM и взаимные лайки!</p>
+        <p class="foto__like"><span>&#9825;</span>Нравится: 2560</p>
+      </div>
+    </div>
+    <p class="foto__title">Затмите их всех!
+      <br>Выкладывайте все, что накопилось в телефоне!</p>
+    <div class="wrapper-lightgray wrapper-lightgray--foto-user">
+      <div class="foto__user">
+        <img src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="foto-user">
         <div class="tuning">
-          <figure class="tuning__btn icon-crop"></figure>
-          <figure class="tuning__btn icon-fill"></figure>
-          <figure class="tuning__btn icon-contrast"></figure>
-          <div class="range-controls">
-            <div class="scale">
-              <div class="bar"></div>
+          <figure class="tuning__btn tuning__btn--crop"></figure>
+          <figure class="tuning__btn tuning__btn--fill"></figure>
+          <figure class="tuning__btn tuning__btn--contrast"></figure>
+          <div class="range">
+            <div class="range__scale">
+              <div class="range__bar"></div>
             </div>
           </div>
         </div>
@@ -101,11 +126,11 @@
     </div>
   </main>
   <footer class="page-footer">
-    <a class="logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
+    <a class="logo logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
     <div class="social">
-      <a class="social-btn icon-twitter" href="#">twitter </a>
-      <a class="social-btn icon-facebook" href="#">facebook </a>
-      <a class="social-btn icon-youtube" href="#">youtube </a>
+      <a class="social__btn social__btn--twitter" href="#">tw </a>
+      <a class="social__btn ocial__btn--facebook" href="#">fb </a>
+      <a class="social__btn ocial__btn--youtube" href="#">ytb </a>
     </div>
     <div class="copyright">
       <p>Разработано</p>
