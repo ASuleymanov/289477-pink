@@ -10,19 +10,16 @@
 
 <body class="page">
   <header class="page-header">
-    <a class="logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
-    <nav class="main-nav">
-      <div class="main-nav__toggle">
-        <div class="main-nav__toggle--open" type="button">Открыть меню</div>
-        <div class="main-nav__toggle--close hidden" type="button">Закрыть меню</div>
-      </div>
-      <ul class="main-nav__items hidden">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
+      <div class="toggle toggle--open"></div>
+      <ul class="main-nav hidden">
         <li class="main-nav__item"><a href="index.html">Главная</a></li>
         <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
         <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
         <li class="main-nav__item"><a href="#">HMTL Academy</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
   <main class="page-main">
     <div class="promo promo--index"></div>
@@ -78,26 +75,30 @@
       </div>
     </section>
     <div class="info">
-      <p class="info__tagline">Остались вопросы?Свяжитесь с нами!</p>
-      <h2 class="info__title">Звоните:</h2>
-      <p class="info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></p>
-      <h2 class="info__title">Пишите:</h2>
-      <p class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      <h2 class="info__title">Приезжайте в гости:</h2>
-      <p class="info__text">ул. Большая Конюшенная, 19/8</p>
+      <div class="container">
+        <p class="info__tagline">Остались вопросы?Свяжитесь с нами!</p>
+        <h2 class="info__title">Звоните:</h2>
+        <p class="info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></p>
+        <h2 class="info__title">Пишите:</h2>
+        <p class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        <h2 class="info__title">Приезжайте в гости:</h2>
+        <p class="info__text">ул. Большая Конюшенная, 19/8</p>
+      </div>
     </div>
     <img class="map" src="img/bg-map-mobile@1x.png" width="320" height="160" alt="map" />
   </main>
   <footer class="page-footer hidden">
-    <a class="logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
-    <div class="social">
-      <a class="social-btn icon-twitter" href="#">tw </a>
-      <a class="social-btn icon-facebook" href="#">fb </a>
-      <a class="social-btn icon-youtube" href="#">ytb </a>
-    </div>
-    <div class="copyright">
-      <p>Разработано</p>
-      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
+    <div class="container">
+      <a class="logo logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
+      <div class="social">
+        <a class="social__btn social__btn--twitter" href="#">tw </a>
+        <a class="social__btn ocial__btn--facebook" href="#">fb </a>
+        <a class="social__btn ocial__btn--youtube" href="#">ytb </a>
+      </div>
+      <div class="copyright">
+        <p>Разработано</p>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
+      </div>
     </div>
   </footer>
 </body>
