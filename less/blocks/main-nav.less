@@ -1,0 +1,38 @@
+/*Зададим стили для блока навигации.*/
+
+.main-nav {
+  width: 100%;
+  min-height: 0px;
+  background-color: #283645;
+}
+
+
+/*Зададим стили для ссылок в меню сайта.*/
+
+.main-nav__item a {
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #283645;
+  border-top: 1px solid #475360;
+  border-bottom: 1px solid #030303;
+}
+
+.main-nav__item a[href] {
+  &:hover {
+    background-color: #283645;
+    border-top-color: #283645;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #283645;
+    border-top-color: #283645;
+  }
+}
