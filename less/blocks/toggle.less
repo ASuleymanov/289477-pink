@@ -1,8 +1,8 @@
-
 /*базовые стили для переключателя.*/
 
 .toggle {
   display: flex;
+   margin: 20px 0px;
   top: 0;
   left: 220px;
   z-index: 2;
@@ -20,41 +20,22 @@
   }
 }
 
-.toggle--open::before {
-  // content: "";
-  // position: absolute;
-  top: 21px;
-  right: 20px;
+.toggle--open {
+  display: flex;
+  margin: 21px 0px;
+  // top: 21px;
+  // right: 20px;
   width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
-  }
-  /*Состояние закрытого переключателя.*/
-  .toggle--close {
-    content: "";
-    top: 0px;
-    right: 0px;
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 30px;
-      left: 35px;
-      width: 30px;
-      height: 4px;
-      background-color: #ffffff;
-    }
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
-    &::after {
-      transform: rotate(-45deg);
-    }
-    &:active::before,
-    &:active::after {
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-  }
-  /*-----------------------------------*/
+  height: 24px;
+ background: transparent url("../img/icon-menu-burger.svg") no-repeat;
+}
+
+
+/*Состояние закрытого переключателя.*/
+
+.toggle--close {
+  display: flex;
+  width: 50px;
+  height: 27px;
+  background: transparent url("../img/icon-no.svg") no-repeat;
+}
