@@ -1,0 +1,27 @@
+// от 320 мобильная версия
+.container {
+  width: auto;
+  padding: 0 20px;
+}
+
+// от 700 планшетная версия
+@media (min-width:700px) {
+  container {
+    width: auto;
+    padding: 0 40px;
+  }
+}
+
+// от 1200 десктопная версия
+@media (min-width:1040px) {
+  container {
+    width: 940px;
+    padding: 0 130px;
+  }
+}
+
+.container--flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
