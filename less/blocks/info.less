@@ -23,3 +23,34 @@
     color: #d22856;
   }
 }
+
+.info__map {
+  width: 100%;
+  height: 420px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+}
+
+@media @tablet-widths {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__tagline {
+    margin: 0 auto;
+    width: 366px;
+    height: 78px;
+    color: #283645;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .info__block {
+    display: flex;
+  }
+  .info__block-half {
+    width: 50%;
+  }
+  .info__map {
+    width: 100%;
+  }
+}

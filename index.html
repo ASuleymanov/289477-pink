@@ -10,9 +10,9 @@
 
 <body class="page">
   <header class="page-header">
-    <div class="container container--flex">
-      <a class="logo" href="index.html"><img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="logotype"></a>
-      <div class="toggle toggle--open"></div>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html"></a>
+      <div class="page-header__toggle page-header__toggle--open"></div>
     </div>
     <ul class="main-nav">
       <li class="main-nav__item"><a href="index.html">Главная</a></li>
@@ -23,13 +23,13 @@
   </header>
   <main class="page-main">
     <div class="promo">
-      <img class="promo__img" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="hand-mobile">
-      <p class="promo__text">Взгляните на жизнь иначе!</p>
-    </div>
-    <div class="download">
-      <div class="container">
+      <div class="promo__half-block">
+        <img class="promo__img" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="hand-mobile">
+      </div>
+      <div class="promo__half-block">
         <div class="download-wrapper">
-          <a class="download__btn" href="#">Скачать приложение</a>
+          <p class="download__text">Взгляните на жизнь иначе!</p>
+          <a class="btn--download" href="#">Скачать приложение</a>
           <div class="download__os-mobile">
             <figure><img src="img/logo-apple.svg" width="50" height="60" alt="apple-logo"></figure>
             <figure><img src="img/logo-android.svg" width="50" height="60" alt="android-logo"></figure>
@@ -40,35 +40,42 @@
       </div>
     </div>
     <div class="tagline">
-      <div class="container">
-        <div class="tagline__text">Устали от серости мегаполиса?</div>
-        <div class="tagline__text">Нам есть, что вам предложить!</div>
-      </div>
+      <div class="tagline__text">Устали от серости мегаполиса?</div>
+      <div class="tagline__text">Нам есть, что вам предложить!</div>
     </div>
     <section class="preview">
-      <div class="container">
+      <div class="preview__half-block">
         <h2 class="preview__title">Поднимает настроение</h2>
         <p class="preview__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         <h2 class="preview__title">Меняет мир вокруг</h2>
         <p class="preview__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         <h2 class="preview__title">Заводит новых друзей</h2>
         <p class="preview__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+      <div class="preview__half-block">
         <div class="preview__img">
           <img src="img/iphone-screen-mobile@1x.png" width="157" height="300" alt="img-phone">
         </div>
       </div>
     </section>
-    <div class="reviews">
-      <div class="container">
-        <div class="reviews__author">Николай Петров</div>
-        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+    <div class="effect">
+      <div class="effect__half-block">
+        <img src="http://placehold.it/238x276" width="238" height="276" alt="img-stopwatch">
+      </div>
+      <div class="effect__half-block">
+        <div class="effect__title">Эффект на 24 часа!</div>
+        <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <p class="effect__text--red">Узнать больше об исследовании</p>
       </div>
     </div>
+    <div class="reviews">
+      <div class="reviews__author">Николай Петров</div>
+      <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <p class="reviews__author-inform">25 лет, водитель трамвая</p>
+    </div>
     <section class="slider">
-      <div class="slide slide--current">
-        <div class="slide__header">
-          <h2 class="slide__title">Стандарт</h2>
-          <span class="slide__price">3,99 USD</span>
+      <div class="slide">
+        <div class="slide__header-empty">
         </div>
         <ul class=slide-list>
           <li class="slide-list__item">Розовый фильтр</li>
@@ -76,19 +83,58 @@
           <li class="slide-list__item">Комментарии</li>
         </ul>
       </div>
+      <div class="slide ">
+        <div class="slide__header">
+          <h2 class="slide__title">База</h2>
+          <span class="slide__price">1,99 USD</span>
+        </div>
+        <ul class=slide-list>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+        </ul>
+      </div>
+      <div class="slide slide--current">
+        <div class="slide__header">
+          <h2 class="slide__title">Стандарт</h2>
+          <span class="slide__price">3,99 USD</span>
+        </div>
+        <ul class=slide-list>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+        </ul>
+      </div>
+      <div class="slide">
+        <div class="slide__header">
+          <h2 class="slide__title">АНЛИМ</h2>
+          <span class="slide__price">9,99 USD</span>
+        </div>
+        <ul class=slide-list>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+        </ul>
+      </div>
     </section>
     <div class="info">
-      <div class="container">
-        <p class="info__tagline">Остались вопросы?Свяжитесь с нами!</p>
+      <p class="info__tagline">Остались вопросы?Свяжитесь с нами!</p>
+      <div class="info__block">
+        <div class="info__block-half">
         <h2 class="info__title">Звоните:</h2>
         <p class="info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></p>
+      </div>
+      <div class="info__block-half">
         <h2 class="info__title">Пишите:</h2>
         <p class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-        <h2 class="info__title">Приезжайте в гости:</h2>
-        <p class="info__text">ул. Большая Конюшенная, 19/8</p>
       </div>
+      </div>
+
+      <h2 class="info__title">Приезжайте в гости:</h2>
+      <p class="info__text">ул. Большая Конюшенная, 19/8</p>
     </div>
-    <img class="map" src="img/bg-map-mobile@1x.png" width="320" height="160" alt="map" />
+    .
+    <div class="info__map"></div>
   </main>
   <footer class="page-footer hidden">
     <div class="container">

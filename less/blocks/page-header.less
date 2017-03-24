@@ -4,11 +4,66 @@
   line-height: 32px;
   text-transform: uppercase;
   background-color: #283645;
-  min-height: 365px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  .container();
+}
+
+.page-header__logo {
+  margin: 22px 20px;
+  width: 75px;
+  background: transparent url("../img/logo-pink-white-mobile.svg") no-repeat;
+}
+
+
+/*базовые стили для переключателя.*/
+
+.page-header__toggle {
+  margin: 21px 20px;
+  top: 0;
+  left: 220px;
+  z-index: 2;
+  width: 80px;
+  height: 65px;
+  font-size: 0;
+  background-color: #283645;
+  cursor: pointer;
+  border: none;
+  &:hover {
+    background-color: #283645;
+  }
+  &:active {
+    background-color: #283645;
+  }
+}
+
+.page-header__toggle--open {
+  width: 50px;
+  height: 24px;
+  background: transparent url("../img/icon-menu-burger.svg") no-repeat;
+}
+
+
+/*Состояние закрытого переключателя.*/
+
+.page-header__toggle--close {
+  display: flex;
+  width: 50px;
+  height: 27px;
+  background: transparent url("../img/icon-no.svg") no-repeat;
 }
 
 @media @tablet-widths {
-  .page-header {
-    padding-bottom: 255px;
+  .page-header__logo {
+    padding: 27px 40px 42px 40px;
+    width: 147px;
+    height: 40px;
+    background: red url("..img/logo-pink-blue-mobile.svg") no-repeat;
+  }
+  .page-header__toggle {
+    padding: 27px 40px 42px 40px;
   }
 }
