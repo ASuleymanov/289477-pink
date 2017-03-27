@@ -1,4 +1,5 @@
 .page-header {
+
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
@@ -9,11 +10,10 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  .container();
 }
 
 .page-header__logo {
-  margin: 22px 20px;
+  margin: 20px;
   width: 75px;
   background: transparent url("../img/logo-pink-white-mobile.svg") no-repeat;
 }
@@ -58,12 +58,27 @@
 
 @media @tablet-widths {
   .page-header__logo {
-    padding: 27px 40px 42px 40px;
+    padding: 27px 0px 42px 0px;
     width: 147px;
     height: 40px;
     background: red url("..img/logo-pink-blue-mobile.svg") no-repeat;
   }
+  .page-header__toggle{
+    margin-top: 40px;
+  }
+}
+@media @desktop-widths{
   .page-header__toggle {
-    padding: 27px 40px 42px 40px;
+    .no-outline();
+  }
+  .page-header__wrapper{
+
+  }
+  .page-header {
+
+    display:flex;
+    justify-content: space-between;
+
+    // background-color: rgba(255, 255, 255, 0.3);
   }
 }

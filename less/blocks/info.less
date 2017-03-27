@@ -32,6 +32,7 @@
 
 @media @tablet-widths {
   .info {
+    .container();
     display: flex;
     flex-direction: column;
   }
@@ -43,14 +44,27 @@
     font-family: "Open Sans";
     font-size: 40px;
     font-weight: 300;
+    margin-bottom: 50px;
   }
   .info__block {
     display: flex;
+    flex-flow: row wrap;
+    width: 100%;
   }
-  .info__block-half {
-    width: 50%;
+  .info__block-item{
+    width:50%;
+    margin: 0 auto;
   }
+
   .info__map {
     width: 100%;
+  }
+}
+@media @desktop-widths{
+  .info__block-item{
+    width:33.33%;
+  }
+  .info__block-item:nth-child(2){
+    order:3;
   }
 }

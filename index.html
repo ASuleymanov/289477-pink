@@ -23,12 +23,12 @@
   </header>
   <main class="page-main">
     <div class="promo">
-      <div class="promo__half-block">
+      <div class="promo__img-block">
         <img class="promo__img" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="hand-mobile">
       </div>
-      <div class="promo__half-block">
-        <div class="download-wrapper">
-          <p class="download__text">Взгляните на жизнь иначе!</p>
+      <div class="promo__download-block">
+        <div class="download">
+          <p class="download__title">Взгляните на жизнь иначе!</p>
           <a class="btn--download" href="#">Скачать приложение</a>
           <div class="download__os-mobile">
             <figure><img src="img/logo-apple.svg" width="50" height="60" alt="apple-logo"></figure>
@@ -41,25 +41,38 @@
     </div>
     <div class="tagline">
       <div class="tagline__text">Устали от серости мегаполиса?</div>
-      <div class="tagline__text">Нам есть, что вам предложить!</div>
+      <div class="tagline__text">Нам есть, что вам
+        <br>предложить!</div>
     </div>
     <section class="preview">
       <div class="preview__half-block">
-        <h2 class="preview__title">Поднимает настроение</h2>
-        <p class="preview__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <h2 class="preview__title">Меняет мир вокруг</h2>
-        <p class="preview__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <h2 class="preview__title">Заводит новых друзей</h2>
-        <p class="preview__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        <div class="preview_item">
+          <h2 class="preview__title">Поднимает настроение</h2>
+          <p class="preview__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="preview_item">
+          <h2 class="preview__title">Меняет мир вокруг</h2>
+          <p class="preview__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="preview_item">
+          <h2 class="preview__title">Заводит новых друзей</h2>
+          <p class="preview__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
       </div>
-      <div class="preview__half-block">
+      <div class="preview__img-block">
+        <div class="preview__img">
+          <img src="img/iphone-screen-mobile@1x.png" width="157" height="300" alt="img-phone">
+        </div>
+        <div class="preview__img">
+          <img src="img/iphone-screen-mobile@1x.png" width="157" height="300" alt="img-phone">
+        </div>
         <div class="preview__img">
           <img src="img/iphone-screen-mobile@1x.png" width="157" height="300" alt="img-phone">
         </div>
       </div>
     </section>
     <div class="effect">
-      <div class="effect__half-block">
+      <div class="effect__img-block">
         <img src="http://placehold.it/238x276" width="238" height="276" alt="img-stopwatch">
       </div>
       <div class="effect__half-block">
@@ -70,84 +83,109 @@
     </div>
     <div class="reviews">
       <div class="reviews__author">Николай Петров</div>
+      <figure><img src="img/quotes.svg" width="79" height="63" alt="img-guotes"></figure>
       <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
       <p class="reviews__author-inform">25 лет, водитель трамвая</p>
     </div>
-    <section class="slider">
-      <div class="slide">
-        <div class="slide__header-empty">
+    <div class="wrapper-lightgray">
+      <section class="slider">
+        <div class="slide ">
+          <div class="slide__header-empty">
+          </div>
+          <ul class=slide-list>
+            <li class="slide-list__item slide-list__item--left">Розовый фильтр</li>
+            <li class="slide-list__item slide-list__item--left">Смайлики</li>
+            <li class="slide-list__item slide-list__item--left">Комментарии</li>
+          </ul>
         </div>
-        <ul class=slide-list>
-          <li class="slide-list__item">Розовый фильтр</li>
-          <li class="slide-list__item">Смайлики</li>
-          <li class="slide-list__item">Комментарии</li>
-        </ul>
-      </div>
-      <div class="slide ">
-        <div class="slide__header">
-          <h2 class="slide__title">База</h2>
-          <span class="slide__price">1,99 USD</span>
+        <div class="slide ">
+          <div class="slide__header">
+            <h2 class="slide__header slide__header--title">База</h2>
+            <span class="slide__header slide__header--price">1,99 USD</span>
+          </div>
+          <ul class=slide-list>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Розовый фильтр</p>
+              <img class="slide-list__item slide-list__item--img" src="img/icon-yes.svg" width="31" height="21" alt="yes">
+            </li>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Смайлики</p>
+              <img class="slide-list__item slide-list__item--img" src="img/icon-no.svg" width="31" height="21" alt="no">
+            </li>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Комментарии</p>
+              <img class="slide-list__item slide-list__item--img" src="img/icon-no.svg" width="31" height="21" alt="no"></li>
+          </ul>
         </div>
-        <ul class=slide-list>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-        </ul>
-      </div>
-      <div class="slide slide--current">
-        <div class="slide__header">
-          <h2 class="slide__title">Стандарт</h2>
-          <span class="slide__price">3,99 USD</span>
+        <div class="slide slide--current">
+          <div class="slide__header">
+            <h2 class="slide__header slide__header--title">Стандарт</h2>
+            <span class="slide__header slide__header--price">3,99 USD</span>
+          </div>
+          <ul class=slide-list>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Розовый фильтр</p>
+              <img class="slide-list__item--img" src="img/icon-yes.svg" width="31" height="21" alt="yes">
+            </li>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Смайлики</p>
+              <img class="slide-list__item--img" src="img/icon-yes.svg" width="31" height="21" alt="yes">
+            </li>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Комментарии</p>
+              <img class="slide-list__item--img" src="img/icon-no.svg" width="31" height="21" alt="no"></li>
+          </ul>
         </div>
-        <ul class=slide-list>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-        </ul>
-      </div>
-      <div class="slide">
-        <div class="slide__header">
-          <h2 class="slide__title">АНЛИМ</h2>
-          <span class="slide__price">9,99 USD</span>
+        <div class="slide ">
+          <div class="slide__header">
+            <h2 class="slide__header slide__header--title">АНЛИМ</h2>
+            <span class="slide__header slide__header--price">9,99 USD</span>
+          </div>
+          <ul class=slide-list>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Розовый фильтр</p>
+              <img class="slide-list__item--img" src="img/icon-yes.svg" width="31" height="21" alt="yes">
+            </li>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Смайлики</p>
+              <img class="slide-list__item--img" src="img/icon-yes.svg" width="31" height="21" alt="yes">
+            </li>
+            <li class="slide-list__item">
+              <p class="slide-list__item slide-list__item--text">Комментарии</p>
+              <img class="slide-list__item--img" src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
+          </ul>
         </div>
-        <ul class=slide-list>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-          <li class="slide-list__item"><img src="img/icon-yes.svg" width="31" height="21" alt="yes"></li>
-        </ul>
-      </div>
-    </section>
+      </section>
+    </div>
     <div class="info">
       <p class="info__tagline">Остались вопросы?Свяжитесь с нами!</p>
       <div class="info__block">
-        <div class="info__block-half">
-        <h2 class="info__title">Звоните:</h2>
-        <p class="info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></p>
+        <div class="info__block-item">
+          <h2 class="info__title">Звоните:</h2>
+          <p class="info__text"><a href="tel:+7812556666">+7 (812) 555-66-66</a></p>
+        </div>
+        <div class="info__block-item">
+          <h2 class="info__title">Пишите:</h2>
+          <p class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+        </div>
+        <div class="info__block-item">
+          <h2 class="info__title">Приезжайте в гости:</h2>
+          <p class="info__text">ул. Большая Конюшенная, 19/8</p>
+        </div>
       </div>
-      <div class="info__block-half">
-        <h2 class="info__title">Пишите:</h2>
-        <p class="info__text"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-      </div>
-      </div>
-
-      <h2 class="info__title">Приезжайте в гости:</h2>
-      <p class="info__text">ул. Большая Конюшенная, 19/8</p>
     </div>
-    .
     <div class="info__map"></div>
   </main>
-  <footer class="page-footer hidden">
-    <div class="container">
-      <a class="logo logo--footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
-      <div class="social">
-        <a class="social__btn social__btn--twitter" href="#">tw </a>
-        <a class="social__btn ocial__btn--facebook" href="#">fb </a>
-        <a class="social__btn ocial__btn--youtube" href="#">ytb </a>
-      </div>
-      <div class="copyright">
-        <p>Разработано</p>
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
-      </div>
+  <footer class="page-footer">
+    <a class="page-footer__logo-footer" href="index.html"><img src="img/logo-pink-blue-mobile.svg" width="150" height="40" alt="logotype"></a>
+    <div class="social">
+      <a class="social__btn social__btn--twitter" href="#">twitter</a>
+      <a class="social__btn social__btn--facebook" href="#">facebook</a>
+      <a class="social__btn social__btn--youtube" href="#">youtube</a>
+    </div>
+    <div class="page-footer__copyright">
+      <p>Разработано</p>
+      <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="htmlacademy"></a>
     </div>
   </footer>
 </body>
